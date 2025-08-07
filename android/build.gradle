@@ -1,0 +1,38 @@
+buildscript {
+  repositories {
+    google()
+    mavenCentral()
+  }
+  dependencies {
+    classpath("com.android.tools.build:gradle:8.1.0")
+  }
+}
+
+apply plugin: "com.android.library"
+apply plugin: "maven-publish"
+
+android {
+  namespace "com.pcmplayer"
+  compileSdkVersion 34
+
+  defaultConfig {
+    minSdkVersion 21
+    targetSdkVersion 34
+    consumerProguardFiles "consumer-rules.pro"
+  }
+
+  publishing {
+    singleVariant("release") {
+      withSourcesJar()
+    }
+  }
+}
+
+repositories {
+  google()
+  mavenCentral()
+}
+
+dependencies {
+  implementation "com.facebook.react:react-android"
+}

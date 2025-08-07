@@ -1,0 +1,38 @@
+{
+  "name": "react-native-pcm-player-lite",
+  "version": "0.1.0",
+  "description": "Ultra-small native module to play streaming 16-bit PCM (mono) in React Native (Android + iOS).",
+  "license": "MIT",
+  "author": "Anas Syed <me@anasyd.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anasyd/react-native-pcm-player-lite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anasyd/react-native-pcm-player-lite/issues"
+  },
+  "keywords": [
+    "react-native",
+    "pcm",
+    "audio",
+    "audiotrack",
+    "avaudioengine",
+    "voice",
+    "streaming"
+  ],
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "react-native": "src/index.js",
+  "files": [
+    "src/**",
+    "android/**",
+    "ios/**",
+    "react-native-pcm-player-lite.podspec",
+    "README.md",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-native": ">=0.71.0"
+  }
+}
