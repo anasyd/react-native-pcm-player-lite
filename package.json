@@ -1,6 +1,6 @@
 {
   "name": "react-native-pcm-player-lite",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ultra-small native module to play streaming 16-bit PCM (mono) in React Native (Android + iOS).",
   "license": "MIT",
   "author": "Anas Syed <me@anasyd.com>",
