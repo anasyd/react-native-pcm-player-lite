@@ -15,25 +15,23 @@ plugins {
 }
 
 android {
-  namespace "com.pcmplayer"
-  compileSdkVersion 34
+    compileSdkVersion 34
 
-  defaultConfig {
-    minSdkVersion 21
-    targetSdkVersion 34
-    consumerProguardFiles "consumer-rules.pro"
-  }
-
-  kotlinOptions {
-    jvmTarget = "1.8"
-  }
-
-  publishing {
-    singleVariant("release") {
-      withSourcesJar()
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 34
     }
-  }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
 }
+
 
 repositories {
   google()
